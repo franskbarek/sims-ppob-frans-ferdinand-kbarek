@@ -74,38 +74,41 @@ const ContentHeader: React.FC = () => {
   return (
     <div className="row mb-5">
       <div className="col-md-6">
-        <img src={profileImage ? profileImage : "" } className="mb-3 rounded-circle" alt="Profile" style={{ width: "50px", height: "50px" }} />
+        <img src={profileImage ? profileImage : ""} className="mb-3 rounded-circle" alt="Profile" style={{ width: "50px", height: "50px" }} />
         <p className="mb-0">Selamat datang,</p>
         <h3>
           {firstName} {lastName}
         </h3>
       </div>
       <div className="col-md-6 position-relative">
-        <div className="bg-orange text-light p-4 d-flex flex-column justify-content-center" style={{ height: "100%", borderRadius: "20px" }}>
-          <p className="mb-3">Saldo Anda</p>
-          <h4 className="mb-1">{isBalanceVisible ? balance : "Rp. ●●●●●●●"}</h4>
-          <div className="d-flex align-items-center">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                refreshBalance();
-              }}
-              className="text-decoration-none text-white d-flex align-items-center"
-            >
-            </a>
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                toggleBalanceVisibility();
-              }}
-              className="text-decoration-none text-white d-flex align-items-center"
-            >
-              {isBalanceVisible ? "Sembunyikan Saldo" : "Lihat Saldo"}
-              <FaEyeSlash className={`ms-2 ${isBalanceVisible ? "d-none" : "d-inline"}`} />
-              <FaEye className={`ms-2 ${isBalanceVisible ? "d-inline" : "d-none"}`} />
-            </a>
+        <div>
+          <img src="/images/Background Saldo.png" alt="Background Saldo" className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded-sm" style={{borderRadius: "15px"}}/>
+          <div className="position-relative d-flex flex-column justify-content-start align-items-start gap-2 text-white">
+            <p className="mt-2">Saldo Anda</p>
+            <h4 className="mb-1">{isBalanceVisible ? balance : "Rp. ●●●●●●●"}</h4>
+
+            <div className="d-flex align-items-center">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  refreshBalance();
+                }}
+                className="text-decoration-none text-white d-flex align-items-center"
+              ></a>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleBalanceVisibility();
+                }}
+                className="text-decoration-none text-white d-flex align-items-center"
+              >
+                {isBalanceVisible ? "Sembunyikan Saldo" : "Lihat Saldo"}
+                <FaEyeSlash className={`ms-2 ${isBalanceVisible ? "d-none" : "d-inline"}`} />
+                <FaEye className={`ms-2 ${isBalanceVisible ? "d-inline" : "d-none"}`} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
