@@ -2,7 +2,7 @@
 
 Link deploy #1 https://sims-ppob-frans-ferdinand-kbarek.vercel.app/
 
-Link deploy alternatif #2 https://sims-ppob-frans-ferdinand-kbarek.vercel.app/
+Link deploy alternatif #2 https://sims-ppob-frans-ferdinand-kbarek.netlify.app/
 
 
 
