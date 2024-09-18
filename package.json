@@ -2,6 +2,7 @@
   "name": "sims-ppob-frans-ferdinand-kbarek",
   "version": "1.0.0",
   "private": true,
+  "author": "frans",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
