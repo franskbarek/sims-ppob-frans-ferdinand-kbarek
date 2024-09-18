@@ -1,5 +1,11 @@
 # React ts + Redux toolkit
 
+Link deploy #1 https://sims-ppob-frans-ferdinand-kbarek.vercel.app/
+
+Link deploy alternatif #2 https://sims-ppob-frans-ferdinand-kbarek.vercel.app/
+
+
+
 Instalasi project
 
 - silahkan jalankan perintah `yarn atau yarn install` untuk instalasi dependencies project
@@ -74,7 +80,6 @@ Instalasi project
     ]
   }
 }
-
 
 ```
 
